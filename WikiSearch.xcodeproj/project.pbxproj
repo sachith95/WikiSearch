@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		CE1BFA0F23EE90CF002CF249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1BFA0D23EE90CF002CF249 /* Main.storyboard */; };
 		CE1BFA1123EE90D0002CF249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1BFA1023EE90D0002CF249 /* Assets.xcassets */; };
 		CE1BFA1423EE90D0002CF249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1BFA1223EE90D0002CF249 /* LaunchScreen.storyboard */; };
+		CE4F3B9423EF3281007585F5 /* APIRequestFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F3B9323EF3281007585F5 /* APIRequestFetcher.swift */; };
+		CE67D64723EF2631006756ED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67D64623EF2631006756ED /* CustomTableViewCell.swift */; };
+		CE67D64923EF2DEB006756ED /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67D64823EF2DEB006756ED /* SearchResultsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		CE1BFA1023EE90D0002CF249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1BFA1323EE90D0002CF249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1BFA1523EE90D0002CF249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4F3B9323EF3281007585F5 /* APIRequestFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestFetcher.swift; sourceTree = "<group>"; };
+		CE67D64623EF2631006756ED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010\U0010CustomTableViewCell\U0010\U0010.swift"; sourceTree = "<group>"; };
+		CE67D64823EF2DEB006756ED /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 				818E4FD04C9221406D67749C /* Pods-WikiSearch.debug.xcconfig */,
 				646DBA7213D0DCE785009890 /* Pods-WikiSearch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +85,9 @@
 				CE1BFA1023EE90D0002CF249 /* Assets.xcassets */,
 				CE1BFA1223EE90D0002CF249 /* LaunchScreen.storyboard */,
 				CE1BFA1523EE90D0002CF249 /* Info.plist */,
+				CE67D64623EF2631006756ED /* CustomTableViewCell.swift */,
+				CE67D64823EF2DEB006756ED /* SearchResultsTableViewController.swift */,
+				CE4F3B9323EF3281007585F5 /* APIRequestFetcher.swift */,
 			);
 			path = WikiSearch;
 			sourceTree = "<group>";
@@ -207,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4F3B9423EF3281007585F5 /* APIRequestFetcher.swift in Sources */,
 				CE1BFA0C23EE90CF002CF249 /* ViewController.swift in Sources */,
 				CE1BFA0823EE90CF002CF249 /* AppDelegate.swift in Sources */,
+				CE67D64923EF2DEB006756ED /* SearchResultsTableViewController.swift in Sources */,
+				CE67D64723EF2631006756ED /* CustomTableViewCell.swift in Sources */,
 				CE1BFA0A23EE90CF002CF249 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
