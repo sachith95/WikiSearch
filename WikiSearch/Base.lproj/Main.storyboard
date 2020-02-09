@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--WikiSearch-->
         <scene sceneID="6nI-fq-zY1">
             <objects>
-                <tableViewController id="IT0-Ug-CbA" sceneMemberID="viewController">
+                <tableViewController id="IT0-Ug-CbA" customClass="SearchResultsTableViewController" customModule="WikiSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kbj-GD-a9K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
                             <outlet property="delegate" destination="IT0-Ug-CbA" id="UVY-dJ-hQv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="72O-ZR-FMn"/>
+                    <navigationItem key="navigationItem" title="WikiSearch" id="72O-ZR-FMn"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEy-fx-VG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

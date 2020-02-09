@@ -45,6 +45,7 @@ class SearchResultsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print(searchResults.count)
         return searchResults.count
     }
     
@@ -61,10 +62,9 @@ class SearchResultsTableViewController: UITableViewController {
        backgroundViewLabel.textColor = .darkGray
        backgroundViewLabel.numberOfLines = 0
        backgroundViewLabel.text =
-              "Oops, /n No results to show! ..."
+              "Oops, \n No results to show! ..."
        tableView.backgroundView = backgroundViewLabel
    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",
                                                  for: indexPath) as! CustomTableViewCell
@@ -75,10 +75,10 @@ class SearchResultsTableViewController: UITableViewController {
         
         if let url = searchResults[indexPath.row]["thumbnail"]["source"].string {
             apiFetcher.fetchImage(url: url, completionHandler: { image, _ in
-                cell.wikiImageView.image = image
+                cell.wikiImageView?.image = image
             })
         }
-
+        
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
